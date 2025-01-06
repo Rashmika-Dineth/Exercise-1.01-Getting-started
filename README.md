@@ -45,3 +45,9 @@
 9. Create a kubectl deployment. The name must be one word and it should start with simple letters. To start deployment run "kubectl create deployment logger-dep --image=rashmika31601/logger:v1.0".
 
 ![](Images/img11.JPG)
+
+10. "kubectl get pods" will show the current deployment status.
+
+![](Images/img12.JPG)
+
+11. "kubectl logs -f logger-dep-6cd975f689-x4q9r" will show the logger output.
