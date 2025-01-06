@@ -51,3 +51,5 @@
 ![](Images/img12.JPG)
 
 11. "kubectl logs -f logger-dep-6cd975f689-x4q9r" will show the logger output.
+
+![](Images/img13.JPG)
