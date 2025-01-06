@@ -21,3 +21,27 @@
 3. build docker image for the "Log output" (This image is called "logger-dep")
 
 ![](Images/img5.JPG)
+
+4. Need to tag username to docker image before push it "docker tag logger-dep rashmika31601/logger:v1.0"
+
+![](Images/img6.JPG)
+
+5. Login to docker "docker login"
+
+![](Images/img7.JPG)
+
+6. Push the docker image to docker, "docker push rashmika31601/logger:v1.0" (Since I've done this previously and there are some files left some layers are already exits )
+
+![](Images/img8.JPG)
+
+7. we can see the docker images by "docker images" command
+
+![](Images/img9.JPG)
+
+8. Update the deployment.yaml file under the manifest folder.
+
+![](Images/img10.JPG)
+
+9. Create a kubectl deployment. The name must be one word and it should start with simple letters. To start deployment run "kubectl create deployment logger-dep --image=rashmika31601/logger:v1.0".
+
+![](Images/img11.JPG)

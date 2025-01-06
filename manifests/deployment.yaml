@@ -6,12 +6,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: Log output
+      app: logger-dep
   template:
     metadata:
       labels:
-        app: Log output
+        app: logger-dep
     spec:
       containers:
-        - name: Log output
+        - name: logger-dep
           image: rashmika31601/logger:v1.0
